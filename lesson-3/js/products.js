@@ -35,7 +35,7 @@ for (let i = 0; i < products.length; i++) {
   itemDetail[i] = `<td>${itemDesc}</td><td>${itemPrice}</td>`;
   // STEP 9: Set the above string as the innerHTML of the new TR element, and then append the new element to the table body (var productList)
   itemRow[i].innerHTML = itemDetail[i];
-  console.log(itemRow[i]);
+  // console.log(itemRow[i]);
   productList.append(itemRow[i]);
 }
 

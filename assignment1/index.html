@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Random Story</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/story.js" defer></script>
+  </head>
+  <body>
+    <h1>A Random Story</h1>
+    <!-- Instruction for Story Generator Game -->
+    <p>
+      Please choose one element from each category (Character, Action, Place)
+      and press the 'Generate Story' button to see your story.
+    </p>
+
+    <!-- Character selector -->
+    <br />
+    <label for="characters">The character is…</label>
+    <select id="characters">
+      <option value="">Please choose</option>
+      <option value="cat">Cat</option>
+      <option value="dog">Dog</option>
+      <option value="robot">Robot</option>
+      <option value="wizard">Wizard</option>
+    </select>
+    <br />
+    <br />
+
+    <!-- Action selector -->
+    <label for="actions">The action is…</label>
+    <select id="actions">
+      <option value="">Please choose</option>
+      <option value="jumps">Jumps</option>
+      <option value="runs">Runs</option>
+      <option value="dances">Dances</option>
+      <option value="sings">Sings</option>
+    </select>
+    <br />
+    <br />
+
+    <!-- Place selector -->
+    <label for="places">The place is…</label>
+    <select id="places">
+      <option value="">Please choose</option>
+      <option value="forest">Forest</option>
+      <option value="castle">Castle</option>
+      <option value="beach">Beach</option>
+      <option value="mountain">Mountain</option>
+    </select>
+    <br />
+    <br />
+    <br />
+
+    <!-- Generate story button -->
+    <button id="generateButton">Generate Story</button>
+    <br />
+    <p id="randomStory"></p>
+  </body>
+</html>

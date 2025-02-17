@@ -51,7 +51,7 @@ btn.addEventListener("click", function () {
   }
 });
 
-/* STEP 3: Skip a loop interation with continue */
+/* STEP 3: Skip a loop iteration with continue */
 const numberList = document.querySelector("#numberList");
 let num = 50;
 for (let i = 1; i <= num; i++) {

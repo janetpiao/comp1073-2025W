@@ -10,7 +10,7 @@ output.textContent = `The third element in myArray is ${myArray[2]}.`;
 myArray[1] = false;
 output.textContent = `The second element in myArray is ${myArray[1]}.`;
 // An array within an array is called a multidimensional array - it can be accessed by specifying the index of the first array, then the item within it
-output.textContent = `The first element in myArray is ${myArray[3]}.`;
+output.textContent = `The fourth element in myArray is ${myArray[3]}.`;
 output.textContent = `The second element within the fourth element in myArray is ${myArray[3][1]}.`;
 /* STEP 3: Determining array length
 Being able to figure out how many elements are contained in an array is a critical feature of JavaScript programming */
