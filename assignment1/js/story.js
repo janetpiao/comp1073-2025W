@@ -16,5 +16,5 @@ function generateStory() {
   let choice3 = document.querySelector("#places").value;
 
   // create a random story
-  randomStory.textContent = `Once upon a time, there was a ${choice1} ${choice2} in a ${choice3}.`;
+  randomStory.textContent = `Once upon a time, there was a ${choice1} ${choice2} in a ${choice3}...`;
 }
