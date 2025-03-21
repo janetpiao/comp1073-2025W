@@ -38,7 +38,6 @@ function populateHeader(jsonObj) {
 function showTopFlavors(jsonObj) {
   // STEP 10c: Attache the JSON topFlavors object to a variable
   let topFlavors = jsonObj.topFlavors;
-
   // STEP 10d: Loop through the topFlavors object
   for (let i = 0; i < topFlavors.length; i++) {
     // STEP 10e: build HTML elements for the content
@@ -63,6 +62,7 @@ function showTopFlavors(jsonObj) {
     article.appendChild(img);
     article.appendChild(ul);
     // STEP 10i: Append each complete ARTICLE element to the SECTION element
+    section.appendChild(article);
   }
 }
 // STEP 11: The instructor will edit the JSON file - refresh your page to see the updated content
