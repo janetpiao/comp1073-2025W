@@ -7,7 +7,7 @@ async function populate() {
   // Introducing JavaScript Object Notation (JSON): https://json.org/
   // STEP 4: Store the URL of a JSON file in a variable */
   const requestURL =
-    "https://smccrindle.github.io/comp1073/lesson10/js/i-scream.json";
+    "https://smccrindle.github.io/comp1073lesson10/js/i-scream.json";
   // STEP 5: Use the new URL to create a new request object
   const request = new Request(requestURL);
   // STEP 6: Make a network request with the fetch() function, which returns a Response object
@@ -20,6 +20,7 @@ async function populate() {
   populateHeader(iScream);
   // STEP 10a: Invoke the showTopFlavors function here, then build it below
 }
+
 // STEP 3b: Call the populate() function
 populate();
 
