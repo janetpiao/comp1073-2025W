@@ -19,7 +19,7 @@ function fetchResults(event) {
   event.preventDefault();
   // STEP 3: Assemble the full URL, according to the API documentation at the New York Times
   url = `${baseURL}?api-key=${key}&q=${searchTerm.value}&fq=document_type:("article")`;
-  // Add start and end dates if needed
+  // Add start and end dates if needed (2025-03-25)
   if (startDate.value !== "") {
     url += `&begin_date=${startDate.value.replaceAll("-", "")}`;
   }
