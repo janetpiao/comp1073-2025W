@@ -1,3 +1,75 @@
 @charset "utf-8";
 
 /* Page Styles */
+html {
+  box-sizing: border-box;
+  width: 80%;
+  margin: 40px auto;
+  background-color: aliceblue;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4rem;
+  color: #222;
+}
+
+/* Style form */
+fieldset {
+  text-align: left;
+  margin: 40px auto;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(206, 227, 250);
+}
+
+/* Style input and dropdown */
+input#name {
+  display: block;
+  padding: 8px;
+  border: 1px solid rgb(206, 227, 250);
+  width: 200px;
+  height: 36px;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+select {
+  display: block;
+  padding: 4px;
+  border: 1px solid rgb(206, 227, 250);
+  width: 200px;
+  height: 36px;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 36px;
+}
+
+/* Style label */
+label[for="name"],
+label[for="ingredients"],
+form p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(8, 1, 99);
+}
+
+/* style button */
+button {
+  background-color: rgb(8, 1, 99);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}

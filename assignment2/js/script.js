@@ -58,7 +58,7 @@ class Smoothie {
     smoothie.setAttribute("src", smoothieImage);
     // create a paragraph to describe the smoothie order
     let para = document.createElement("p");
-    para.textContent = `Hi ${this.name}, here is a ${this.size} smoothie with ${this.ingredients} ${ifYogurt}.`;
+    para.textContent = `Hi ${this.name}, here is a ${this.size} ${this.ingredients} smoothie  ${ifYogurt}.`;
 
     // Append the image element to the output element
     output.appendChild(smoothie);
