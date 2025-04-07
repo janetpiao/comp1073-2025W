@@ -62,3 +62,15 @@ class Smoothie {
     output.appendChild(para);
   }
 }
+
+// Handle form submission
+const form = document.querySelector("form");
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const name = document.getElementById("name").value;
+  const ingredients = document.getElementById("ingredients").value;
+  const size = document.querySelector('input[name="size"]:checked').value;
+  const yogurt = document.querySelector('input[name="yogurt"]:checked').value;
+  const smoothieOrder = new Smoothie(name, size, ingredients, yogurt);
+  smoothieOrder.serveIt();
+});
