@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smoothie Oder Site</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Smoothie Oder Site</h1>
+    <p>Introduction</p>
+    <fieldset>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <br />
+        <!-- Drop down menu for fruits -->
+        <label for="fruit">Ingredients:</label>
+        <select name="fruit" id="fruit">
+          <option value="banana">Banana</option>
+          <option value="grape">Grape</option>
+          <option value="kiwi">Kiwi</option>
+          <option value="orange">Orange</option>
+          <option value="strawberry">Strawberry</option>
+          <option value="watermelon">Watermelon</option>
+        </select>
+
+        <!-- Select size of smoothie -->
+        <p>Please select the size of smoothie</p>
+        <input type="radio" id="small" name="small" value="small" />
+        <label for="small">Small</label><br />
+        <input type="radio" id="medium" name="medium" value="medium" />
+        <label for="medium">Medium</label><br />
+        <input type="radio" id="large" name="large" value="large" />
+        <label for="large">Large</label><br />
+        <input
+          type="radio"
+          id="extralarge"
+          name="extralarge"
+          value="extralarge"
+        />
+        <label for="extralarge">Extra Large</label>
+        <br />
+        <!-- Add Greek yogurt -->
+        <p>Do you want to add Greek yogurt?</p>
+        <input type="radio" id="yes" name="yes" value="yes" />
+        <label for="yes">Yes</label><br />
+        <input type="radio" id="no" name="no" value="no" />
+        <label for="no">Yes</label><br />
+        <br />
+        <button type="submit" id="btn">Order Smoothie</button>
+      </form>
+    </fieldset>
+    <p id="output"></p>
+  </body>
+</html>
