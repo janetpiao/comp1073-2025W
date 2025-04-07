@@ -19,6 +19,8 @@ class Smoothie {
   serveIt() {
     // Create an image element
     const smoothie = document.createElement("img");
+    // Set image path
+    let smoothieImage = "img/banana.svg";
     // Set src attribute
     smoothie.setAttribute("src", smoothieImage);
     // Set the size of the image according to smoothie size
@@ -39,8 +41,7 @@ class Smoothie {
     }
     smoothie.setAttribute("height", smoothieSize);
     // set src attribute of the image element according to ingredients
-    // Set image path
-    let smoothieImage;
+
     if (this.yogurt === "yes") {
       smoothieImage = `img/${this.ingredients}-yogurt.svg`;
     } else {
@@ -53,10 +54,11 @@ class Smoothie {
     } else {
       ifYogurt = "without yogurt";
     }
-    // Set the title of the image element to be a description
-    let description = `Hi ${this.name}, here is a ${this.size} smoothie with ${this.ingredients} ${this.yogurt}.`;
-    smoothie.setAttribute("title", description);
     // Append the image element to the output element
     output.appendChild(smoothie);
+    // create a paragraph to describe the smoothie order
+    let para = document.createElement("p");
+    para.textContent = `Hi ${this.name}, here is a ${this.size} smoothie with ${this.ingredients} ${this.yogurt}.`;
+    output.appendChild(para);
   }
 }
