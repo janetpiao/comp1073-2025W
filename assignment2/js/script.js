@@ -54,11 +54,13 @@ class Smoothie {
     } else {
       ifYogurt = "without yogurt";
     }
-    // Append the image element to the output element
-    output.appendChild(smoothie);
+
     // create a paragraph to describe the smoothie order
     let para = document.createElement("p");
-    para.textContent = `Hi ${this.name}, here is a ${this.size} smoothie with ${this.ingredients} ${this.yogurt}.`;
+    para.textContent = `Hi ${this.name}, here is a ${this.size} smoothie with ${this.ingredients} ${ifYogurt}.`;
+
+    // Append the image element to the output element
+    output.appendChild(smoothie);
     output.appendChild(para);
   }
 }
