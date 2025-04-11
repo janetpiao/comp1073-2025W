@@ -39,7 +39,7 @@ const person = {
 /* STEP 6b: Note how this breaks the greeting function - update the greeting function to use this sub-namespace */
 
 /* STEP 7: You can also use bracket notation, just like an array - objects that are built this way are often referred to as associative arrays */
-output.textContent = `${person["name"]["first"]} ${person["name"]["last"]}} is my name.`;
+output.textContent = `${person["name"]["first"]} ${person["name"]["last"]} is my name.`;
 /* STEP 8a: You can also set members of an object - try changing the person's name, and age */
 person.name.first = "James";
 person.age = 28;
