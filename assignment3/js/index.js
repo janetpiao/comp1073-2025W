@@ -42,8 +42,8 @@ async function fetchResults(event) {
     imageLink.href = result.links.html;
     imageLink.target = "_blank";
     imageLink.textContent = result.alt_description;
-    imageWrapper.appendChild(imageLink);
     imageWrapper.appendChild(image);
+    imageWrapper.appendChild(imageLink);
     searchResults.appendChild(imageWrapper);
   });
 }
